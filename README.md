@@ -2,22 +2,23 @@
 
 ## Pages
 
+-   [] Home
 -   [x] Blog Home
--   [] Blog Show
--   [] Blog New
+-   [x] Blog Show
+-   [x] Blog New
 -   [] Blog Edit
 
 ## Router
 
 -   [x] Blog
--   [] Home
--   [] Show
--   [] New
+-   [x] Home
+-   [x] Show
+-   [x] New
 -   [] Edit
 
 ## Function
 
--   [] Blog Write
+-   [x] Blog Write
 -   [] Blog Edit
 -   [] Blog Delete
 

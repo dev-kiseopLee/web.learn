@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    main.container.mt-2
+        h1 Edit POST
+        form(action=`/blog/show/${blog._id}` method='POST' novalidate class='validated-form')
+            input(type="hidden" name='_method' value='PUT')
+            div.my-3
+                label(class='form-label'  for="title") Title
+                input(class='form-control' type="text" id='title' name='blog[title]' value=`${blog.title}` required)  
+            div.my-3
+                label(class='form-label' for="description") Description
+                textarea(class='form-control' type="text" id='description' name='blog[description]' required)= blog.description
+            div.my-3
+                label(class='form-label' for="tags") Tags
+                input(class='form-control' type='text' id='tags' name='blog[tags]' value=`${blog.tags}` required) 
+            button(class='btn btn-primary mt-1') 수정
+        a(href=`/blog/${blog._id}`) Back To Post

@@ -3,15 +3,15 @@ extends ../layout
 block content
     main.container.mt-2
         form(action="/blog" method='POST' novalidate class='validated-form')
-            div.mb-3
+            div.my-3
                 label(class='form-label' for="title") Title
                 input(class='form-control' type="text" id='title' name='blog[title]' required)
-            div.mb-3
+            div.my-3
                 label(class='form-label' for="description") Description
                 textarea(class='form-control' type="text" id='description' name='blog[description]' required)
-            div.mb-3
+            div.my-3
                 label(class='form-label' for="tags") Tags
                 input(class='form-control' type='text' id='tags' name='blog[tags]' required) 
                     
-            div.mb-3
+            div.my-3
                 button(class='btn btn-primary mt-1') 작성

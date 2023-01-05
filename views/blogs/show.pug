@@ -6,3 +6,7 @@ block content
     h2= blog.title
     p= blog.description
     a(href="/blog") blog home 
+    form(action=`/blog/show/${blog._id}` method='POST')
+            input(type="hidden" name='_method' value='DELETE')
+            a(href=`/blog/edit/${blog._id}` class='btn btn-info m-1') 수정
+            button.btn.btn-success.m-1 삭제 
