@@ -9,7 +9,7 @@
 
 ## Router
 
--   [] Blog
+-   [x] Blog
 -   [] Home
 -   [] Show
 -   [] New
@@ -23,4 +23,4 @@
 
 ## DataBase MongoDB
 
--   [] Connect
+-   [x] Connect

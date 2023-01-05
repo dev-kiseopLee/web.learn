@@ -1,9 +1,10 @@
 extends ../layout
 
 block content
-  h1 blog
-  main
+  main.container
+    h1 blog
+    a(class='d-block my-3' href=`/blog/new`) New Post 
     - for(let blog of blogs)
-        a(class='' href='#')= blog.title
+        a(class='' href=`blog//show/${blog.id}`)= blog.title
         p(class='')= blog.description
         tag(class='')= blog.tag
