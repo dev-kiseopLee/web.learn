@@ -1,0 +1,9 @@
+extends ../layout
+
+block content
+  h1 blog
+  main
+    - for(let blog of blogs)
+        a(class='' href='#')= blog.title
+        p(class='')= blog.description
+        tag(class='')= blog.tag

@@ -2,25 +2,25 @@
 
 ## Pages
 
-[] Blog Home
-[] Blog Show
-[] Blog New
-[] Blog Edit
+-   [x] Blog Home
+-   [] Blog Show
+-   [] Blog New
+-   [] Blog Edit
 
 ## Router
 
-[] Blog
-[] Home
-[] Show
-[] New
-[] Edit
+-   [] Blog
+-   [] Home
+-   [] Show
+-   [] New
+-   [] Edit
 
 ## Function
 
-[] Blog Write
-[] Blog Edit
-[] Blog Delete
+-   [] Blog Write
+-   [] Blog Edit
+-   [] Blog Delete
 
 ## DataBase MongoDB
 
-[] Connect
+-   [] Connect
