@@ -1,0 +1,17 @@
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: 'mo-';
+
+// Then import Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+body {
+    padding: 51px;
+    font: 25px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    color: #445544;
+}
+
+a {
+    color: #aab7ff;
+}
