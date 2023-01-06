@@ -6,7 +6,7 @@
 -   [x] Blog Home
 -   [x] Blog Show
 -   [x] Blog New
--   [] Blog Edit
+-   [x] Blog Edit
 
 ## Router
 
@@ -14,14 +14,21 @@
 -   [x] Home
 -   [x] Show
 -   [x] New
--   [] Edit
+-   [x] Edit
 
 ## Function
 
 -   [x] Blog Write
--   [] Blog Edit
--   [] Blog Delete
+-   [x] Blog Edit
+-   [x] Blog Delete
 
 ## DataBase MongoDB
 
 -   [x] Connect
+
+## Styling
+
+- [] Blog Home
+- [] Blog Show
+- [] Blog New
+- [] Blog Edit

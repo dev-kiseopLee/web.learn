@@ -2,9 +2,19 @@ extends ../layout
 
 block content
   main.container
-    h1 blog
+    div(class='toolbar py-3 py-lg-6')
+      div(class='toolbar-container container-xxl d-flex flex-stack')
+        div(class='toolbar-title d-flex flex-column jestify-content-center felx-wrap me-3')
+          h1(class='heading d-flex fw-bold fx-3 text_dark') blog
+          ul(class='breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1')
+            li(class='breadcrumb-item text-muted')
+              a(href='#') Home 
+            li(class='breadcrumb-item')
+              span(class='bullet bg-gray-400 w-5px h-2px')
+            li(class='breadcrumb-item text-muted') Blog
     a(class='d-block my-3' href=`/blog/new`) New Post 
-    - for(let blog of blogs)
-        a(class='' href=`blog/show/${blog.id}`)= blog.title
-        p(class='')= blog.description
-        tag(class='')= blog.tag
+    div(class='card')
+      - for(let blog of blogs)
+          a(class='' href=`blog/show/${blog.id}`)= blog.title
+          p(class='')= blog.description
+          tag(class='')= blog.tag

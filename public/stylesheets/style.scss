@@ -1,15 +1,35 @@
 // Variable overrides first
+$text-dark: #181c32;
+$text-white: #f5f8fa;
+$text-gray-400: #b5b5c3;
 
 // Then import Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
+@import './scss/blog.scss';
 
 body {
     padding: 51px;
     font: 25px 'Lucida Grande', Helvetica, Arial, sans-serif;
-    color: #445544;
+    background-color: $text_white;
 }
 
-a {
-    color: #aab7ff;
-    text-decoration: none;
+.toolbar {
+    .toobar-container {
+        .toobar-title {
+            // justify-content: center;
+        }
+    }
 }
+
+.heading {
+    color: $text_dark;
+}
+
+.card {
+    background-color: #ffffff;
+}
+
+// a {
+//     color: #aab7ff;
+//     text-decoration: none;
+// }
