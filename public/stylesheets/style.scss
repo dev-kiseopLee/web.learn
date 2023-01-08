@@ -8,28 +8,40 @@ $text-gray-400: #b5b5c3;
 @import './scss/blog.scss';
 
 body {
-    padding: 51px;
-    font: 25px 'Lucida Grande', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Fira Sans', sans-serif;
     background-color: $text_white;
 }
 
-.toolbar {
-    .toobar-container {
-        .toobar-title {
-            // justify-content: center;
-        }
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', serif;
+    color: #181c32;
 }
 
-.heading {
-    color: $text_dark;
+p {
+}
+
+a {
+    text-decoration: none;
 }
 
 .card {
+    border: 0;
+    box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.02);
     background-color: #ffffff;
 }
 
-// a {
-//     color: #aab7ff;
-//     text-decoration: none;
-// }
+.card-text {
+    color: #7e8299;
+}
+
+.tag {
+    color: #7239ea;
+    background-color: #f8f5ff;
+}
