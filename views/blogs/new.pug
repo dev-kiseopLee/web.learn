@@ -3,15 +3,31 @@ extends ../layout
 block content
     main.container.mt-2
         form(action="/blog" method='POST' novalidate class='validated-form')
-            div.my-3
-                label(class='form-label' for="title") Title
-                input(class='form-control' type="text" id='title' name='blog[title]' required)
-            div.my-3
-                label(class='form-label' for="description") Description
-                textarea(class='form-control' type="text" id='description' name='blog[description]' required)
-            div.my-3
-                label(class='form-label' for="tags") Tags
-                input(class='form-control' type='text' id='tags' name='blog[tags]' required) 
-                    
-            div.my-3
+            div(class='d-flex justify-content-end my-2')
+                button(class='btn btn-primary mt-1 me-2') 취소
                 button(class='btn btn-primary mt-1') 작성
+            div.my-2
+                label(class='form-label' for="title") 제목
+                input(class='form-control' type="text" id='title' name='blog[title]' required)
+            div.my-2
+                label(class='form-label' for="tags") 태그
+                input(class='form-control' type='text' id='tags' name='blog[tags]' required) 
+            div.my-2
+                    label(class='form-label' for="description") 내용
+                    textarea(type="text" id='summernote' name='blog[description]' required)
+
+    script.
+       $('#summernote').summernote({
+        placeholder: '내용을 작성해 주세요',
+        tabsize: 2,
+        height: 400,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });

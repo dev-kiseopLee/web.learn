@@ -2,9 +2,12 @@ extends ../layout
 
 block content
   main.container
-    h1 show
-    h2= blog.title
-    p= blog.description
+    div.card
+      div.card-title
+        h2= blog.title
+      div.card-body
+        div.card-text
+          p= blog.description
     a(href="/blog") blog home 
     form(action=`/blog/show/${blog._id}` method='POST')
             input(type="hidden" name='_method' value='DELETE')

@@ -8,8 +8,8 @@ block content
         div.row
           div(class='col m-2')
             - for(let blog of blogs)
-                a(class='card-title fw-bold fs-4' href=`blog/show/${blog.id}`)= blog.title
-                p(class='card-text fs-5 fw-semibold mt-3 gray-600')= blog.description
-                div(class='d-flex flex-stack flex-wrap mb-2')
+                a(class='card-title fw-bold fs-2' href=`blog/show/${blog.id}`)= blog.title
+                p(class='card-text fs-5 fw-semibold mt-3')= blog.description
+                //- overflow-hidden text-nowrap
+                div(class='d-flex flex-stack flex-wrap')
                   span(class='tag badge fw-bold my-2') HTML
-          
